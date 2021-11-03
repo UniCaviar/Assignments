@@ -1,6 +1,5 @@
 from types import GeneratorType
 
-
 grocery_items={"Chicken":"$1.59", "Beef":"$1.99", "Cheese":"$1.00", "Milk":"$2.50"}
 
 print(grocery_items["Chicken"])
@@ -48,7 +47,7 @@ shoe_names["Capri Onyx"]=5
 shoe_names["Air Force 1"]=15
 
 del grocery_items["Chicken"]
-del grocery_items["Cheese"]
+del grocery_items["Bread"]
 print(grocery_items)
 
 del video_games["Pokemon Brilliant Diamond"]
@@ -58,4 +57,23 @@ print(video_games)
 del shoe_names["Air Max"]
 del shoe_names["Jordan 13"]
 print(shoe_names)
+
+def total_price():
+    total_price("Beef" + "Cheese")
+    print("The total price of beef and cheese is 2.99")
+    return
+
+def price_difference():
+    price_difference("Beef" - "Cheese")
+    print("The difference between beef and cheese is 0.99")
+
+def restock():
+    restock("Yeezy",3)
+    print(shoe_names["Yeezy"])
+    
+def clearance_sale():
+    clearance_sale("SB Dunk",5)
+    print(shoe_names["SB Dunk"])
+
+
 
