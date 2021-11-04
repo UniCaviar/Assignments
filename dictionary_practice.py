@@ -58,22 +58,24 @@ del shoe_names["Air Max"]
 del shoe_names["Jordan 13"]
 print(shoe_names)
 
-def total_price():
-    total_price("Beef" + "Cheese")
-    print("The total price of beef and cheese is 2.99")
-    return
+def total_price(food_item, food_item2):
+    total= grocery_items[food_item] + grocery_items[food_item2]
+    return total
 
-def price_difference():
-    price_difference("Beef" - "Cheese")
-    print("The difference between beef and cheese is 0.99")
+def price_difference(food_item, food_item2):
+    diff = grocery_items[food_item] - grocery_items[food_item2]
+    return diff
 
-def restock():
-    restock("Yeezy",3)
-    print(shoe_names["Yeezy"])
-    
-def clearance_sale():
-    clearance_sale("SB Dunk",5)
-    print(shoe_names["SB Dunk"])
+def shoe_restock(shoe, num):
+    shoe_names[shoe] *= num
+    return shoe_names
 
+def clearance_sale(shoe, num):
+    shoe_names[shoe] //= num
+    return shoe_names
+
+def price_of_all_games(game, game2):
+    total= video_games["Grand Theft Auto 5"] + video_games["Grand Theft Auto The Trilogy"] + video_games["Legend of Zelda Breath of the Wild"] + video_games["Persona 3 FES"] + video_games["Persona 4 Golden"] +video_games["Persona 5 Royal"] + video_games["Pokemon Brilliant Diamond"]
+    return total
 
 

@@ -13,7 +13,7 @@ dog_breeds[4]
 dog_breeds[1]
 
 favorite_city=city_names[0:3]
-favorite_dog_breeds=dog_breeds[3, 4, 1, 0]
+favorite_dog_breeds=dog_breeds[0:4]
 
 city_names[0]="San  Francisco"
 city_names[2]="Brookyln"
@@ -29,3 +29,6 @@ del city_names[3]
 city_names.pop(5)
 city_names.remove("Miami")
 print(city_names)
+
+def city_names():
+    print(city_names)
