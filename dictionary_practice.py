@@ -58,12 +58,12 @@ del shoe_names["Air Max"]
 del shoe_names["Jordan 13"]
 print(shoe_names)
 
-def total_price(food_item, food_item2):
-    total= grocery_items[food_item] + grocery_items[food_item2]
+def total_price(food, food2):
+    total= grocery_items[food] + grocery_items[food2]
     return total
 
-def price_difference(food_item, food_item2):
-    diff = grocery_items[food_item] - grocery_items[food_item2]
+def price_difference(food, food2):
+    diff = grocery_items[food] - grocery_items[food2]
     return diff
 
 def shoe_restock(shoe, num):
