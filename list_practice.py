@@ -30,5 +30,31 @@ city_names.pop(5)
 city_names.remove("Miami")
 print(city_names)
 
-def city_names():
-    print(city_names)
+def print_city(list):
+    list= city_names
+    return list
+
+def reorangize_list(list):
+    # [1,2,3,4,5]
+    print(list)
+    counter=0
+
+    while counter < len(list):
+        item1 = list[counter]
+        item2 = list[counter +1]
+
+        if len(item1) >= len(item2):
+            counter += 1
+            continue
+        elif counter + 1 == len(list) - 1:
+            break
+        else:
+            list.remove(item1)
+            list.append(item1)
+            counter += 1
+
+            return list
+
+def print_favorite_dogs(list):
+    list=favorite_dog_breeds
+    return list
