@@ -13,14 +13,14 @@ else:
     print("Greetings, hater of pirates!")
                 
 # 2
-author = {
+author ={
     "Charles Dickens": "1870",
     "William Thackeray": "1863",
     "Anthony Trollope": "1882",
     "Gerard Manley Hopkins": "1889"
 }
-for author Date in author.items{}:
-    print("%s" % author + " died in " + "%d." + Date)
+for Date in author.items:
+    print("%s" % author + " died in " + "%s." + Date)
 
              
 # 3
@@ -28,18 +28,18 @@ year=int.input("Greetings! What is your year of origin? ")
 
 if year <= 1900:
     print ("Woah, that's the past!")
-elif year > 1900 && year < 2020:
+elif year > 1900 & year < 2020:
     print ("That's totally the present!")
-elif
+else:
     print ("Far out, that's the future!!")
            
 # 4
-classy_Person:
+Person=()
 def __initalize__(self, first_name, last_name):
     self.first = first_name
     self.last = last_name
 def speak(self):
-    print("My name is "self.first" + "self.last"")
+    print("My name is self.first + self.last")
 
 me = Person("Brandon", "Walsh")
 you = Person("Ethan", "Reed")
@@ -69,7 +69,7 @@ elif avg > 69 and avg < 80:
     letter_grade = "C"
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-elif
+else:
     letter_grade = "F"
 
 for grade in grades:
