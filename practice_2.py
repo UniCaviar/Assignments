@@ -13,46 +13,46 @@ else:
     print("Greetings, hater of pirates!")
                 
 # 2
-author ={
+authors ={
     "Charles Dickens": "1870",
     "William Thackeray": "1863",
     "Anthony Trollope": "1882",
     "Gerard Manley Hopkins": "1889"
 }
-for Date in author.items:
-    print("%s" % author + " died in " + "%s." + Date)
+for author, date in authors.items():
+    print("%s" % author + " died in " + "%d." % int(date))
 
              
 # 3
-year=int.input("Greetings! What is your year of origin? ")
+year=int(input("Greetings! What is your year of origin? "))
 
-if year <= 1900:
-    print ("Woah, that's the past!")
-elif year > 1900 & year < 2020:
-    print ("That's totally the present!")
+if year < 2021:
+    print("Woah, that's the past!")
+elif year >= 2021:
+    print("That's totally the present!")
 else:
-    print ("Far out, that's the future!!")
+    print("Far out, that's the future!!")
            
 # 4
-Person=()
-def __initalize__(self, first_name, last_name):
-    self.first = first_name
-    self.last = last_name
-def speak(self):
-    print("My name is self.first + self.last")
+class Person:
+    def __initalize__(self, first_name, last_name):
+        self.first = first_name
+        self.last = last_name
+    def speak(self):
+        print("My name is "+ self.first + "  "+ self.last)
 
 me = Person("Brandon", "Walsh")
 you = Person("Ethan", "Reed")
 
 me.speak()
-you.self.speak
+you.speak()
            
 # 5
 exam_one = int(input("Input exam grade one: "))
 
-exam_two = input("Input exam grade two: ")
+exam_two = int(input("Input exam grade two: "))
 
-exam_three = str(input("Input exam grade three: "))
+exam_three = int(input("Input exam grade three: "))
 
 grades = [exam_one, exam_two, exam_three]
 sum = 0
@@ -79,7 +79,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter_grade is "F":
+if letter_grade == "F":
     print("Student is failing.")
 else:
     print("Student is passing.")
